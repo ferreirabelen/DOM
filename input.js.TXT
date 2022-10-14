@@ -1,0 +1,17 @@
+const input = document.querySelector(".input-normal")
+
+// me va amostrar el vvalue que tiene en html 
+document.write(input.value)                 
+
+//me cambia el type a acolor y me DICE que lo cambia a color 
+document.write(input.type = "text")      
+
+// En cambio este solo me lo muestra 
+input.type = "text"                      
+
+//accept sirve para decir que archivo se puede mandar imagen, txt, pdf, si tiene el file como type
+input.accept= ".pdf"
+
+//colocar el minimo de caracteres que se puede tener. 2 formas de hacerlo
+input.minLength = 4;
+input.setAttribute("minLength",4)  
